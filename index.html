@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MONOLITH | Premium Architectural Design</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <header>
+        <div class="nav-inner">
+            <div style="font-weight: 700; letter-spacing: 1px;">MONOLITH</div>
+            <div style="display: flex; gap: 30px; color: var(--text-dim);">
+                <span class="hover-target" onclick="document.getElementById('work').scrollIntoView();">Work</span>
+                <span class="hover-target" onclick="document.getElementById('services').scrollIntoView();">Services</span>
+                <span class="hover-target" onclick="document.getElementById('contact').scrollIntoView();">Contact</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1 class="reveal">Borderless Design.<br>Limitless Scale.</h1>
+        <p class="manifesto reveal" style="transition-delay: 0.1s;">
+            Rooted in <span>Cairo</span>. Built for the world. We are a digital-first architectural collective uniting the brightest minds across the <span>MENA region</span> to deliver uncompromising spatial experiences globally.
+        </p>
+    </section>
+
+    <div class="container" id="work">
+        <div class="grid">
+            <div class="bento-item item-1 reveal hover-target" onclick="openProject('obsidian')">
+                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2000" alt="Tower">
+                <div class="label"><h2>The Obsidian Tower</h2><p>New Cairo District</p></div>
+                <div class="view-btn">View 3D Model</div>
+            </div>
+            <div class="bento-item item-2 reveal hover-target" style="transition-delay: 0.1s;" onclick="openProject('desert')">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6199f7a096?q=80&w=1000" alt="Villa">
+                <div class="label"><h2>Desert Pavilion</h2><p>Riyadh</p></div>
+                <div class="view-btn">View 3D Model</div>
+            </div>
+            <div class="bento-item item-3 reveal hover-target" style="transition-delay: 0.2s;" onclick="openProject('lumina')">
+                <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1000" alt="Interior">
+                <div class="label"><h2>Lumina Space</h2><p>Dubai</p></div>
+                <div class="view-btn">View 3D Model</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="services-wrapper" id="services">
+        <div class="services-header reveal">
+            <h2>Our Disciplines</h2>
+        </div>
+        <div class="service-list">
+            
+            <div class="service-card reveal hover-target">
+                <div class="service-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--text-main)" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+                </div>
+                <h3>Full Design Package</h3>
+                <p>The complete end-to-end solution. From the first sketch to the final technical blueprint, seamlessly integrating concept, interior, and architectural mastery.</p>
+            </div>
+
+            <div class="service-card reveal hover-target" style="transition-delay: 0.1s;">
+                <div class="service-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--text-main)" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                </div>
+                <h3>Conceptual Design</h3>
+                <p>Visualizing the future. We develop compelling 3D concepts, spatial narratives, and aesthetic directions to bring your initial vision to life.</p>
+            </div>
+
+            <div class="service-card reveal hover-target" style="transition-delay: 0.2s;">
+                <div class="service-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--text-main)" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                </div>
+                <h3>Technical Drawings</h3>
+                <p>Precision meets architecture. We provide comprehensive CAD drafting, exact floor plans, elevations, and structural documentation ready for execution.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <footer id="contact" class="reveal">
+        <h2>Let's build the future.</h2>
+        <div class="contact-grid">
+            <div class="contact-item">
+                <h3>General Inquiries</h3>
+                <a href="mailto:hello@monolith-studio.com" class="hover-target">hello@monolith-studio.com</a>
+            </div>
+            <div class="contact-item">
+                <h3>Cairo Headquarters</h3>
+                <a href="tel:+201001234567" class="hover-target">+20 100 123 4567</a>
+            </div>
+            <div class="contact-item">
+                <h3>Start a Project</h3>
+                <a href="#" class="hover-target" onclick="toggleModal('inquiryModal'); return false;" style="color: var(--accent);">Open Inquiry Form ↗</a>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2026 Monolith Architectural Group.
+        </div>
+    </footer>
+
+    <div class="project-modal" id="projectViewer">
+        <div class="close-project hover-target" onclick="closeProject()">✕ Close</div>
+        <div class="project-content">
+            <div class="project-header">
+                <h1 id="proj-title">Project Name</h1>
+                <p id="proj-location">Location</p>
+            </div>
+            <div class="canvas-3d-container hover-target" id="model-container">
+                </div>
+            <div class="project-brief" id="proj-desc">Project description.</div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="inquiryModal">
+        <div class="modal-window">
+            <span class="close-btn hover-target" onclick="toggleModal('inquiryModal')">✕</span>
+            <h3>Start a Project</h3>
+            <p>Initiate your design process. Secure and confidential.</p>
+            <input type="text" placeholder="Name or Organization" class="hover-target">
+            <input type="email" placeholder="Email Address" class="hover-target">
+            <button class="submit-btn hover-target">Submit Inquiry</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
