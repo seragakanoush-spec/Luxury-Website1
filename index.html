@@ -13,11 +13,24 @@
 
     <header>
         <div class="nav-inner">
-            <div style="font-weight: 700; letter-spacing: 1px;">MONOLITH</div>
-            <div style="display: flex; gap: 30px; color: var(--text-dim);">
+            <div class="nav-brand">MONOLITH</div>
+            
+            <div class="nav-links">
                 <span class="hover-target" onclick="document.getElementById('work').scrollIntoView();">Work</span>
                 <span class="hover-target" onclick="document.getElementById('services').scrollIntoView();">Services</span>
                 <span class="hover-target" onclick="document.getElementById('contact').scrollIntoView();">Contact</span>
+            </div>
+            
+            <div class="nav-socials">
+                <a href="#" target="_blank" class="social-icon hover-target" aria-label="LinkedIn">
+                    <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                </a>
+                <a href="#" target="_blank" class="social-icon hover-target" aria-label="Instagram">
+                    <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                </a>
+                <a href="#" target="_blank" class="social-icon hover-target" aria-label="Behance">
+                    <svg viewBox="0 0 24 24"><path d="M22 7h-7v-2h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.729-5.564-5.675 0-3.91 2.325-5.92 5.466-5.92 3.082 0 4.964 1.906 5.152 4.662H13.23c.095 1.761 1.17 2.573 2.741 2.573 1.258 0 2.03-.432 2.541-1.425l3.214.785zm-6.288-4.331c-.139-1.309-1.077-1.996-2.222-1.996-1.124 0-1.928.783-2.091 1.996h4.313zm-11.233-5.32c.576-.57 1.458-.849 2.646-.849H0v14.15h4.636c1.377 0 2.458-.337 3.243-1.01.785-.672 1.178-1.583 1.178-2.732 0-1.163-.518-2.05-1.554-2.661v-.15c.801-.274 1.428-.759 1.88-1.456.452-.697.678-1.52.678-2.47 0-1.096-.342-1.968-1.026-2.622zm-3.321 4.706H3.344v-3.791h1.531c.731 0 1.21.165 1.438.495.228.33.342.759.342 1.286 0 .548-.126.974-.378 1.278-.252.304-.737.456-1.455.456zm-.037 6.273H3.344v-4.171h1.611c.745 0 1.248.182 1.509.547.261.365.392.839.392 1.422 0 .61-.137 1.091-.411 1.442-.274.352-.772.528-1.498.528z"/></svg>
+                </a>
             </div>
         </div>
     </header>
@@ -54,7 +67,6 @@
             <h2>Our Disciplines</h2>
         </div>
         <div class="service-list">
-            
             <div class="service-card reveal hover-target">
                 <div class="service-icon">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--text-main)" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
@@ -62,7 +74,6 @@
                 <h3>Full Design Package</h3>
                 <p>The complete end-to-end solution. From the first sketch to the final technical blueprint, seamlessly integrating concept, interior, and architectural mastery.</p>
             </div>
-
             <div class="service-card reveal hover-target" style="transition-delay: 0.1s;">
                 <div class="service-icon">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--text-main)" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
@@ -70,7 +81,6 @@
                 <h3>Conceptual Design</h3>
                 <p>Visualizing the future. We develop compelling 3D concepts, spatial narratives, and aesthetic directions to bring your initial vision to life.</p>
             </div>
-
             <div class="service-card reveal hover-target" style="transition-delay: 0.2s;">
                 <div class="service-icon">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--text-main)" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
@@ -78,28 +88,39 @@
                 <h3>Technical Drawings</h3>
                 <p>Precision meets architecture. We provide comprehensive CAD drafting, exact floor plans, elevations, and structural documentation ready for execution.</p>
             </div>
-
         </div>
     </div>
 
     <footer id="contact" class="reveal">
         <h2>Let's build the future.</h2>
         <div class="contact-grid">
-            <div class="contact-item">
+            <div class="contact-item hover-target" onclick="openContactModal('general')">
                 <h3>General Inquiries</h3>
-                <a href="mailto:hello@monolith-studio.com" class="hover-target">hello@monolith-studio.com</a>
+                <span class="contact-link">Ask a Question ↗</span>
             </div>
-            <div class="contact-item">
+            <div class="contact-item hover-target" onclick="openContactModal('call')">
                 <h3>Cairo Headquarters</h3>
-                <a href="tel:+201001234567" class="hover-target">+20 100 123 4567</a>
+                <span class="contact-link">Request a Call ↗</span>
             </div>
-            <div class="contact-item">
+            <div class="contact-item hover-target" onclick="openContactModal('project')">
                 <h3>Start a Project</h3>
-                <a href="#" class="hover-target" onclick="toggleModal('inquiryModal'); return false;" style="color: var(--accent);">Open Inquiry Form ↗</a>
+                <span class="contact-link">Submit Brief ↗</span>
             </div>
         </div>
-        <div class="copyright">
-            &copy; 2026 Monolith Architectural Group.
+        
+        <div class="footer-bottom">
+            <div class="copyright">&copy; 2026 Monolith Architectural Group. All rights reserved.</div>
+            <div class="footer-socials">
+                <a href="#" target="_blank" class="social-icon hover-target" aria-label="LinkedIn">
+                    <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                </a>
+                <a href="#" target="_blank" class="social-icon hover-target" aria-label="Instagram">
+                    <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                </a>
+                <a href="#" target="_blank" class="social-icon hover-target" aria-label="Behance">
+                    <svg viewBox="0 0 24 24"><path d="M22 7h-7v-2h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.729-5.564-5.675 0-3.91 2.325-5.92 5.466-5.92 3.082 0 4.964 1.906 5.152 4.662H13.23c.095 1.761 1.17 2.573 2.741 2.573 1.258 0 2.03-.432 2.541-1.425l3.214.785zm-6.288-4.331c-.139-1.309-1.077-1.996-2.222-1.996-1.124 0-1.928.783-2.091 1.996h4.313zm-11.233-5.32c.576-.57 1.458-.849 2.646-.849H0v14.15h4.636c1.377 0 2.458-.337 3.243-1.01.785-.672 1.178-1.583 1.178-2.732 0-1.163-.518-2.05-1.554-2.661v-.15c.801-.274 1.428-.759 1.88-1.456.452-.697.678-1.52.678-2.47 0-1.096-.342-1.968-1.026-2.622zm-3.321 4.706H3.344v-3.791h1.531c.731 0 1.21.165 1.438.495.228.33.342.759.342 1.286 0 .548-.126.974-.378 1.278-.252.304-.737.456-1.455.456zm-.037 6.273H3.344v-4.171h1.611c.745 0 1.248.182 1.509.547.261.365.392.839.392 1.422 0 .61-.137 1.091-.411 1.442-.274.352-.772.528-1.498.528z"/></svg>
+                </a>
+            </div>
         </div>
     </footer>
 
@@ -116,17 +137,45 @@
         </div>
     </div>
 
-    <div class="modal-overlay" id="inquiryModal">
+    <div class="modal-overlay" id="dynamicModal">
         <div class="modal-window">
-            <span class="close-btn hover-target" onclick="toggleModal('inquiryModal')">✕</span>
-            <h3>Start a Project</h3>
-            <p>Initiate your design process. Secure and confidential.</p>
-            <input type="text" placeholder="Name or Organization" class="hover-target">
-            <input type="email" placeholder="Email Address" class="hover-target">
-            <button class="submit-btn hover-target">Submit Inquiry</button>
+            <span class="close-btn hover-target" onclick="closeContactModal()">✕</span>
+            
+            <h3 id="modalTitle">Start a Project</h3>
+            <p id="modalDesc" style="color: var(--text-dim); font-size: 14px; margin-bottom: 25px;">Initiate your design process. Secure and confidential.</p>
+            
+            <form id="form-general" class="dynamic-form" onsubmit="handleFormSubmit(event, 'General Inquiry')">
+                <input type="text" placeholder="Your Name" required class="hover-target">
+                <input type="email" placeholder="Email Address" required class="hover-target">
+                <textarea rows="4" placeholder="How can we help?" required class="hover-target"></textarea>
+                <button type="submit" class="submit-btn hover-target">Send Message</button>
+            </form>
+
+            <form id="form-call" class="dynamic-form" onsubmit="handleFormSubmit(event, 'Call Request')" style="display: none;">
+                <input type="text" placeholder="Your Name" required class="hover-target">
+                <input type="tel" placeholder="Phone Number (Include Country Code)" required class="hover-target">
+                <select required class="hover-target custom-select">
+                    <option value="" disabled selected>Preferred Time (Cairo time, GMT+3)</option>
+                    <option value="Morning">Morning (9:00 AM - 12:00 PM)</option>
+                    <option value="Afternoon">Afternoon (1:00 PM - 5:00 PM)</option>
+                </select>
+                <button type="submit" class="submit-btn hover-target">Schedule Call</button>
+            </form>
+
+            <form id="form-project" class="dynamic-form" onsubmit="handleFormSubmit(event, 'Project Brief')" style="display: none;">
+                <input type="text" placeholder="Name or Organization" required class="hover-target">
+                <input type="email" placeholder="Email Address" required class="hover-target">
+                <textarea rows="3" placeholder="Project Location, Area (sqm), and Scope..." required class="hover-target"></textarea>
+                <button type="submit" class="submit-btn hover-target">Submit Project Brief</button>
+            </form>
+
+            <div id="formFeedback" style="display:none; margin-top:15px; text-align:center; font-size:14px; font-weight:500;"></div>
         </div>
     </div>
 
     <script src="script.js"></script>
 </body>
 </html>
+        
+                   
+            
