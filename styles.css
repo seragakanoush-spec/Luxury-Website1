@@ -234,3 +234,26 @@ input:focus, textarea:focus, .custom-select:focus { border-color: var(--accent);
     .contact-grid { gap: 40px; flex-direction: column; }
     .footer-bottom { flex-direction: column; gap: 20px; text-align: center; }
 }
+:root { --bg: #000; --text: #f5f5f7; --accent: #2997ff; }
+
+body {
+    background: var(--bg); color: var(--text);
+    -webkit-font-smoothing: antialiased; /* Apple Smooth Text */
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+/* Shake Animation for Errors */
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}
+.shake { animation: shake 0.4s ease-in-out; border-color: #ff3b30 !important; }
+
+/* 3D Viewer enhancements */
+.canvas-3d-container { will-change: transform, opacity; }
+
+/* SEO & Performance: Hidden elements */
+.loading .reveal { opacity: 0; transform: translateY(20px); }
