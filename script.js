@@ -174,4 +174,38 @@ async function handleFormSubmit(event, formType) {
         feedback.className = 'error-msg';
         feedback.style.display = 'block';
     }
+}const handleFormSubmit = async (event) => {
+    event.preventDefault();
+    
+    // 1. BOT PROTECTION: Honeypot Check
+    if (document.getElementById('hp_field').value !== "") {
+        console.warn("Bot activity detected.");
+        return;
+    }
+
+    const form = event.target;
+    const btn = form.querySelector('.submit-btn');
+    btn.disabled = true;
+    btn.innerText = "Securing...";
+
+    try {
+        const response = await fetch('/api/send', {
+            method: 'POST',
+            body: JSON.stringify({ /* payload here */ })
+        });
+
+        if (!response.ok) throw new Error();
+        
+        btn.innerText = "Inquiry Sent ✓";
+        btn.style.background = "#32d74b";
+    } catch (err) {
+        form.classList.add('shake');
+        btn.innerText = "Try Again";
+        btn.disabled = false;
+        setTimeout(() => form.classList.remove('shake'), 500);
+    }
+};
+
+function scrollToSection(id) {
+    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
 }
